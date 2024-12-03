@@ -12,15 +12,15 @@ COR SECUND 3: #251605
 * { font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; margin: 0px; padding: 0px; box-sizing: border-box;}
 
 
-html, body { background-color: blueviolet;
+html, body { background-color: #5eb9d4;
 height: 100vh; width: 100vw;}  /* A GRANDE DIFERENÇA É O CODE - OVERFLOW-HIDDEN */
 
 main { width: 100vw; height: 100vh; position: relative;}
 
-section#login { background:aliceblue; background-size:cover ; width: 260px; height: 500px; border-radius: 20px; position: absolute; background-repeat: no-repeat;
-top: 50%; left: 50%; transform: translate(-50%,-50%); overflow: hidden; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479); transition: widht .3s; height: .3s; transition-timing-function: ease;}
+section#login { background:aliceblue; background-size:cover ; width: 260px; height: 520px; border-radius: 20px; position: absolute; background-repeat: no-repeat;
+top: 50%; left: 50%; overflow: hidden; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479); transition: widht .3s; height: .3s; transition-timing-function: ease;transform: translate(-50%,-50%)}
 
-section#login > div#img { background: url(../imagens/pexels-scottwebb-136205.jpg); height: 250px; background-size: cover;background-position: left, top; background-repeat: no-repeat; display: block;}
+section#login > div#img { background: url(../imagens/pexels-scottwebb-136205.jpg); height: 220px; background-size: cover;background-position: left, top; background-repeat: no-repeat; display: block;}
 
 section#login > div#formu { padding: 10px; display: block; }
 
@@ -28,6 +28,21 @@ section#login > div#formu >h1 {margin-bottom: 10px; text-align: center;}
 
 section#login > div#formu >p {font-size: .8em;}
 
-form > input[type=submit] { display: block; font-size: 1em; width: 100%; height: 40px; background-color:#52C1C6;border: none;
-color: white;}
+form > div.campo { background-color: #069aa1; display: block; width: 100%; height: 43px; border-radius: 8px; margin: 5px 0px; border: solid 2px #069aa1 ;}
 
+div.campo > label {display: none;}
+
+div.campo > span { color: white;font-size: 2em;width:40px;padding: 5px;}
+
+div.campo > input { background-color: #befdf8; font-size: 1em; height: 100%; border: none; border-radius: 8px; padding: 4px; width: calc(100% - 45px); transform: translateY(-11px);}
+
+div.campo > input:focus-within { background-color: white;}
+
+form > input[type=submit] { display: block; font-size: 1em; width: 100%; height: 40px; background-color:#069aa1;border: none;
+color: white; border-radius: 5px;}
+
+form > a.botao { display: block; text-align: center; font-size: 1em; width: 100%; background-color: #ffffff; height: 40px; text-decoration: none; color: #036b70;border: solid 1px #036b70 ; border-radius: 5px; padding-top: 5px; margin-top: 7px;} 
+
+form > a.botao > span { font-size: 0.9em;}
+
+form > a.botao:hover { background-color: #069aa1; color: white;}
